@@ -1,0 +1,675 @@
+@import url('/css/fonts.css');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+main {
+    display: block;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+:root{
+    --Edo: 'Edo', cursive;
+    --Kollektif: 'Kollektif', cursive;
+}
+
+header {
+    display: block;
+}
+
+header .site-title{
+    background: url('/assets/image/Background_Header.png');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+/* header .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+} */
+
+/* --------------navbar--------------- */
+
+.nav {
+    float: left;
+    background-color: #2a4181;
+    padding: 5px;
+    width: 100%;
+}
+
+.nav li {
+    float: left;
+    list-style: none;
+}
+
+
+.nav li a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--Edo);
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav li a:hover {
+    background: #0578b9;
+    color: black;
+}
+
+.nav li a.active {
+    background-color: #0578b9;
+    color: black;
+}
+
+.center ul{
+    width: fit-content;
+    margin: auto;
+}
+
+.show-menu {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--Edo);
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0578b9;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+/* ------x--------navbar---------x--------- */
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/* --------------------------------main-------------------------------- */
+/* #content {
+    float: left;
+    width: 100%;
+} */
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+main #bg-profile {
+    background: url('/assets/image/bg-profile.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    /* border: 2px solid black; */
+    background-size: 100%;
+    position: relative;
+    display: flex;
+    /* flex-direction: row; */
+ }
+
+/* .foto-pp {
+    width: 100px;;
+} */
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.flex-item-left .foto-pp{
+    padding: 10px;
+    flex: 30%;
+}
+
+.flex-item-right {
+    padding: 10px;
+    flex: 70%;
+}
+
+.tx-profile p{
+    font-family: var(--Kollektif);
+    color: #2a4181;
+    background-color: white;
+}
+
+.foto-pp {
+    font-family: var(--Edo);
+    color: #2a4181;
+}
+
+
+ main #bg-service {
+    background: url('/assets/image/bg-services.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    /* border: 2px solid black; */
+    height: 655px;
+    width: 100%;
+    background-size: 100%;
+    position: relative;
+    display: flex;
+ }
+
+main .title-service {
+    color: #ffffff;
+}
+
+.title-project {
+    color: #ffffff;
+    font-family: var(--Edo);
+    margin-left: 800px;
+    text-align: center;
+}
+
+main .service-content {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    padding: 20px;
+    margin-top: 150px;
+}
+
+.service {
+    flex-grow: 1;
+    margin: 5px;
+    /* border: 2px solid black; */
+}
+
+
+main .tx-service {
+    color: white;
+    font-family: var(--Edo);
+    text-align: center;
+    font-size: 40px;
+}
+
+figure {
+    margin-bottom: 50px;
+}
+
+img.offered {
+    border-radius: 50%;
+}
+
+h1 {
+     font-family: var(--Edo);
+     font-size: 40px;
+     position: absolute ;
+ }
+
+
+p {
+     font-family: var(--Kollektif);
+     font-size: 23px;
+     text-align: center;
+ }
+/* ---------------x-------------main------------x------------------- */
+/* --------------Project Carousel-------------- */
+
+main .bg-project{
+    background: url('/assets/image/bg-services.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height: 655px;
+    width: 100%;
+    background-size: 100%;
+    position: relative;
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+
+main .project-post .project-content{
+    /* display: flex; */
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    margin-top: 80px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    /* border: 2px solid black; */
+}
+    
+
+
+.project-title {
+    flex-grow: 1;
+    margin: 5px;
+    font-family: var(--Edo);
+    color: #ffffff;
+
+}
+
+main .project-content{
+    padding: .7rem 2rem;
+    margin: .5rem;
+}
+
+main .project-content {
+    display: block;
+}
+
+section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+section .container .owl-nav .owl-prev .owl-nav-prev,
+section .container .owl-nav .owl-next .owl-nav-next{
+    color: gray;
+    background: transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: midnightblue;
+}
+
+.owl-theme .owl-nav [class*='owl-']{
+    outline: none;
+}
+
+/* ------x-------Project Carousel-------x------ */
+
+/* --------------Clients Testimoni -------------------- */
+main #bg-client{
+    background: url('/assets/image/bg-client.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 655px;
+    width: 100%;
+    background-size: 100%;
+    position: relative;
+    /* border: 2px solid black; */
+    display: flex;
+    color: #2a4181;
+}
+
+.client-title {
+    color: #2a4181;
+    font-family: var(--Edo);
+    margin-left: 800px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/* ------x-------Clients Testimoni -------x------------ */
+/* --------------Contact------------------------ */
+main #bg-contact{
+    background: url('/assets/image/bg-contact.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 655px;
+    width: 100%;
+    background-size: 100%;
+    position: relative;
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+
+/* ------x-------Contact---------------x-------- */
+
+h2 {
+    font-family: var(--Edo);
+    color: #ffffff;
+    position: absolute ;
+}
+
+/* ------------------Footer---------------------- */
+footer.footer{
+    height: 100%;
+    background: rgb(39, 39, 39);
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 48px 14.4px;
+}
+
+footer.footer .container h2{
+    color: white;
+}
+
+footer.footer .newsletter .form-element{
+    background: grey;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+    padding: 8px 11.2px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: var(--Kollektif);
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer h2 {
+    font-family: var(--Edo);
+    text-align: center;
+}
+
+footer.footer p {
+    font-family: var(--Kollektif);
+    color: grey;
+    margin: auto;
+}
+
+footer.footer .newsletter .form-element span{
+    background: skyblue;
+    padding: 8px 11.2px;
+    cursor: pointer;
+}
+
+footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+footer.footer .follow div i{
+    color: whitesmoke;
+    padding: 0 .4rem;
+}
+
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Kollektif);
+}
+
+footer.footer .rights h4 a{
+    color: whitesmoke;
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: midnightblue;
+}
+
+footer.footer .move-up span:hover{
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.contact h2{
+    padding: 0px 0px 8px 90px;
+    text-align: center;
+    font-family: var(--Kollektif);
+}
+
+.contact p{
+    padding: 30px 110px 0px 10px;
+    text-align: center;
+    font-family: var(--Kollektif);
+}
+
+.newsletter .form-element{
+    padding: .5rem 2rem;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer .title {
+    margin-top: 30px;
+}
+
+footer .item {
+    margin-top: 8px;
+    margin-left: 75px;
+}
+
+/* ------------------Footer---------------------- */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1000px){ 
+/* ---------------------Profile------------------ */
+    header .site-title {
+        width: 100%;
+        height: 25vh;
+    }
+
+    ul {
+        position: static;
+        display: none;
+    }
+
+    li {
+        margin-bottom: 1px;
+    }
+
+    ul li, li a{
+        width: 100%;
+    }
+
+    .show-menu {
+        display:block;
+    }
+
+
+   #bg-profile .card .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-item-left {
+        padding: 10px;
+        flex: 100%
+    }
+    
+    .flex-item-right {
+        padding: 10px;
+        flex: 100%
+    }
+
+
+    #bg-profile img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* #bg-profile .tx-profile{
+        margin-top: 10px;
+        margin-left: 0;
+        max-width: 100%;
+        max-height: 100%;
+    } */
+   .foto-pp h1{
+        margin-top: 85%;
+        font-size: 20px;
+       text-align: left;
+   }
+   #profile { 
+        padding-top: 50px;
+        font-family: var(--Kollektif);
+        font-size: 12px;
+        justify-content: center;
+        text-align: center;
+    }
+/* --------x------------Profile---------x-------- */
+/* ---------------------Service------------------- */
+   main #bg-service{
+       /* background: none !important;
+       background-image: none !important; */
+       width: 100%;
+       height: 100vh !important;
+       background: url('/assets/image/bg-services.png');
+       background-size: contain;
+
+   }
+
+   .title-service h1{
+       font-size: 20px;
+   }
+
+   .service p{
+        font-size: 16px;
+   }
+
+    main .service-content {
+        display: flex;
+        width: auto;
+        height: 100%;
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    main .tx-service {
+        color: white;
+        font-family: var(--Edo);
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    figure{
+        margin-bottom: 0;
+    }
+
+/* -------x-------------Service-----------x------- */
+/*----------------------Project--------------------------  */
+main .bg-project {
+    background: url('/assets/image/bg-services.png');
+    background-size: contain;
+    width: 100%;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main .project-content {
+    flex: 100%;
+}
+
+main .project-content img{
+    width: 100%;
+}
+
+.project-title h3  {
+    font-size: 16px
+}
+
+.project-title p  {
+    font-size: 12px
+}
+
+main .owl-navigation {
+    display: none !important;
+    flex: 100%
+}
+/*---------x------------Project-------------x------------  */
+
+/* ----------------------Footer----------------------*/
+footer.footer .container{
+    grid-template-columns: repeat(1, 1fr);
+
+}
+footer.footer .container > div{
+    width: fit-content;
+}
+
+footer .rights{
+    padding: 0 1.4rem;
+    text-align: center;
+}
+
+footer.footer h2 {
+    margin-left: 20%;
+    text-align: center;
+}
+
+footer.footer p {
+    margin-left: 15%;
+}
+
+};  
+
+
+      
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
